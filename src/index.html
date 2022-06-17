@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body class="font-Montserrat dark:bg-slate-900">
+    <nav class="w-full h-14 hidden lg:flex p-4 justify-between fixed z-10 bg-cyan-900">
+        <div class="h-auto w-auto">
+            <a class="text-2xl text-emerald-300 font-black cursor-pointer" href="#home">Travel</a>
+        </div>
+        <div class="flex space-x-6 text-slate-200">
+            <a class="font-bold text-md" href="#home">Inicio</a>
+            <a class="font-bold text-md" href="#recomendados">Recomendados</a>
+            <a class="font-bold text-md" href="#rentas_destacadas">Rentas</a>
+            <a class="font-bold text-md" href="#faqs">FAQS</a>
+            <a class="font-bold text-md" href="#sobre_nosotros">Sobre Nosotros</a>
+        </div>
+        <div class="flex space-x-4">
+            <svg class=" cursor-pointer" width="26" height="26" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-current text-neutral-300" d="M19 19L13 13M15 8C15 8.91925 14.8189 9.82951 14.4672 10.6788C14.1154 11.5281 13.5998 12.2997 12.9497 12.9497C12.2997 13.5998 11.5281 14.1154 10.6788 14.4672C9.82951 14.8189 8.91925 15 8 15C7.08075 15 6.1705 14.8189 5.32122 14.4672C4.47194 14.1154 3.70026 13.5998 3.05025 12.9497C2.40024 12.2997 1.88463 11.5281 1.53284 10.6788C1.18106 9.82951 1 8.91925 1 8C1 6.14348 1.7375 4.36301 3.05025 3.05025C4.36301 1.7375 6.14348 1 8 1C9.85652 1 11.637 1.7375 12.9497 3.05025C14.2625 4.36301 15 6.14348 15 8Z" stroke="#d1d5db" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg id="toggle" class="cursor-pointer" width="26" height="26" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-current text-neutral-300" d="M13.1946 13.8217C14.9231 14.1748 16.7172 14.0122 18.354 13.354C17.684 15.0213 16.5303 16.45 15.0415 17.4562C13.5527 18.4624 11.7969 19.0001 9.99999 19C7.91037 18.9977 5.88662 18.2687 4.27565 16.9378C2.66467 15.6069 1.56683 13.757 1.17031 11.7054C0.773783 9.65374 1.10328 7.52805 2.10232 5.69272C3.10135 3.85739 4.7077 2.42673 6.64599 1.646C5.98779 3.28277 5.82514 5.0769 6.17827 6.80535C6.53139 8.53381 7.38472 10.1204 8.63217 11.3678C9.87962 12.6153 11.4662 13.4686 13.1946 13.8217Z" stroke="#3F3F46" stroke-width="" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <a href="./login.html">
+                <svg class="cursor-pointer" width="22" height="26" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-current text-neutral-300" d="M10.8284 7.82843C11.5786 7.07828 12 6.06087 12 5C12 3.93913 11.5786 2.92172 10.8284 2.17157C10.0783 1.42143 9.06087 1 8 1C6.93913 1 5.92172 1.42143 5.17157 2.17157C4.42143 2.92172 4 3.93913 4 5C4 6.06087 4.42143 7.07828 5.17157 7.82843C5.92172 8.57857 6.93913 9 8 9C9.06087 9 10.0783 8.57857 10.8284 7.82843Z" stroke="#3F3F46" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path class="fill-current text-neutral-300" d="M3.05025 14.0503C4.36301 12.7375 6.14348 12 8 12C9.85652 12 11.637 12.7375 12.9497 14.0503C14.2625 15.363 15 17.1435 15 19H1C1 17.1435 1.7375 15.363 3.05025 14.0503Z" stroke="#3F3F46" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+    <section class="w-full lg:h-screen">
+        <div class="w-full h-3/4" id="home">
+            <div class="w-full h-full">
+                <div class="w-full h-full flex flex-col absolute space-y-64 py-4 items-center lg:space-y-0 lg:items-start lg:pt-40 lg:justify-start">
+                    <input class="outline-none p-2 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco" type="search" name="" id="">
+                    <div class="hidden h-auto lg:w-2/5 lg:flex pb-4">
+                        <p class="text-3xl ml-16 font-bold text-slate-900">Encuentra más ubicaciones como esta</p>
+                    </div>
+                    <button class="w-40 text-lg rounded-full font-semibold text-neutral-800 bg-white p-2 shadow-sm transition duration-500 hover:bg-green-300 hover:text-sky-900 delay-150 ease-in-out transform hover:-translate-y-1 hover:scale-110 lg:ml-16">Explorar</button>
+                </div>
+                <div class="w-full h-full  lg:h-full lg:bg-[url('./images/travel12.jpg')] lg:bg-cover lg:bg-center lg:bg-no-repeat">
+                    <img class="lg:hidden w-full h-96" src="/public/images/travel9.jpg"/>
+            </div>
+        </div>
+        <div class="w-full h-auto flex flex-col justify-center lg:px-8" id="recomendados">
+        <p class="text-3xl font-semibold text-primary dark:text-white pt-4 pl-4 lg:pl-0">Recomendados</p>
+        <div class="w-auto h-72 lg:h-80 items-center mt-5 overflow-x-auto overscroll-x-contain flex space-x-4 overflow-y-hidden pl-2 pr-2">
+            <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-[url('./images/travel8')] bg-cover"></div>
+                <div class="w-full h-2/5 rounded-b-lg">
+                    <p class="text-white text-bold text-xl px-4 py-2">Noruega</p>
+                    <p class="text-white text-md px-4">Lorems ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-[url('./images/travel7.jpg')] bg-cover"></div>
+                <div class="w-full h-2/5 rounded-b-lg">
+                    <p class="text-white text-bold text-xl px-4 py-2">New York</p>
+                    <p class="text-white text-md px-4">Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-[url('./images/travel8.jpg')] bg-cover"></div>
+                <div class="w-full h-2/5 rounded-b-lg">
+                    <p class="text-white text-bold text-xl px-4 py-2">Suecia</p>
+                    <p class="text-white text-md px-4">Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-[url('./images/travel9.jpg')] bg-cover"></div>
+                <div class="w-full h-2/5 rounded-b-lg">
+                    <p class="text-white text-bold text-xl px-4 py-2">San Francisco</p>
+                    <p class="text-white text-md px-4">Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-[url('./images/travel10.jpg')] bg-cover"></div>
+                <div class="w-full h-2/5  rounded-b-lg">
+                    <p class="text-white text-bold text-xl px-4 py-2">Dubai</p>
+                    <p class="text-white text-md px-4">Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-[url('./images/travel11.jpg')] bg-cover"></div>
+                <div class="w-full h-2/5 rounded-b-lg">
+                    <p class="text-white text-bold text-xl px-4 py-2">Croacia</p>
+                    <p class="text-white text-md px-4">Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-[url('./images/travel2.jpg')] bg-cover"></div>
+                <div class="w-full h-2/5 rounded-b-lg">
+                    <p class="text-white text-bold text-xl px-4 py-2">Noruega</p>
+                    <p class="text-white text-md px-4">Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-[url('./images/travel5.jpg')] bg-cover"></div>
+                <div class="w-full h-2/5 rounded-b-lg">
+                    <p class="text-white text-bold text-xl px-4 py-2">Hawái</p>
+                    <p class="text-white text-md px-4">Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="w-full h-3/5 rounded-t-lg bg-[url('./images/travel3.jpg')] bg-cover"></div>
+                <div class="w-full h-2/5 rounded-b-lg">
+                    <p class="text-white text-bold text-xl px-4 py-2">España</p>
+                    <p class="text-white text-md px-4">Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="px-2 w-full lg:px-6" id="rentas_destacadas">
+        <p class="text-3xl text-cyan-900 font-semibold py-4 mt-2 dark:text-white">Rentas Destacadas</p>
+        <div class="w-full h-full flex flex-col items-center justify-center">
+            <div class="w-full h-96 bg-[url('./images/travel2.jpg')] bg-cover rounded-xl lg:bg-center mb-6">
+                <p class="card-title lg:text-black">Chicago</p>
+                <p class="text-md pl-5 mr-20 text-neutral-900 font-semibold lg:text-lg">2 habitaciones, baño y cocina</p>
+            </div>
+            <div class="lg:flex lg:h-full lg:w-full lg:space-x-4">
+                <div class="w-full h-96 bg-[url('./images/travel5.jpg')] bg-cover rounded-xl mb-6 lg:text-lg lg:h-auto">
+                    <p class="card-title">Los Angeles</p>
+                    <p class="text-md pl-5 mr-20 text-neutral-900 font-semibold lg:text-lg">2 habitaciones, baño y cocina</p>
+                </div>
+                <div class="lg:w-full lg:h-full lg:flex lg:flex-col lg:pl-4">
+                    <div class="w-full h-96 bg-[url('./images/travel6.jpg')] bg-cover rounded-xl mb-6 lg:text-lg">
+                        <p class="card-title">Miami</p>
+                        <p class="text-md pl-5 mr-20 text-neutral-900 font-semibold lg:text-lg">3 habitaciones, 2 baños, cocina y excelente vista al mar</p>
+                    </div>
+                    <div class="w-full h-96 bg-[url('./images/travel1.jpg')] bg-cover rounded-xl mb-6">
+                        <p class="card-title">Bali</p>
+                        <p class="text-md pl-5 mr-20 text-neutral-900 font-semibold">2 habitaciones, baño, cocina y piscina</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="w-full dark:text-gray-300" id="faqs">
+        <div class="w-full h-full px-6 flex flex-col space-y-3">
+            <p class="text-3xl text-slate-800 font-semibold mt-5 dark:text-gray-300">FAQS</p>
+            <div class="">
+                <p class="text-xl font-medium text-slate-900">Política de Cancelación</p>
+                <p class="text-md pt-2">Para estancias menores a una semana es importante avisar con 3 días de
+                    anticipación, de caso contario será sancionado.</p>
+            </div>
+            <div>
+                <p class="text-xl font-medium text-slate-900">Métodos de pago</p>
+                <p class="text-md pt-2">
+                    Aceptamos distintos métodos de pago: VISA, MasterCard, American Express,
+                    Paypal y Binance
+                </p>
+            </div>
+            <div>
+                <p class="text-xl font-medium text-slate-900">Mascotas</p>
+                <p class="text-md pt-2">El tema de las mascotas dependerá directamente del anfitrión.</p>
+            </div>
+            <div>
+                <p class="text-xl font-medium text-slate-900">Información de Seguridad</p>
+                <p class="text-md pt-2">
+                    Todas nuestras estancias cuentan con seguro en caso de accidentes
+                </p>
+            </div>
+            <div>
+                <p class="text-xl font-medium text-slate-900">Estancias Largas</p>
+                <p class="text-md pt-1">
+                    Contamos con estancias de hasta 3 meses, en este caso es requerido un
+                    anticipo con un monto del 50% del valor de la renta
+                </p>
+            </div>
+        </div>
+        </div>
+        <footer class="flex-none w-full h-auto bg-gray-50 p-4 space-y-2 mb-10 mt-8 lg:mb-0" id="sobre_nosotros">
+            <p class="text-lg font-bold">Sobre Nosotros</p>
+            <p class="text-sm text-gray-400">Inversionistas</p>
+            <p class="text-sm text-gray-400">Empleos</p>
+            <p class="text-sm text-gray-400">Terminos y Condiciones</p>
+        </footer>
+    </section>
+
+    <div class="w-full h-12 fixed flex justify-evenly items-center bottom-0 shadow-md lg:hidden bg-cyan-900" id="tab_bar">
+        <a href="#home">
+            <svg  width="26" height="26" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path  d="M1 10L3 8M3 8L10 1L17 8M3 8V18C3 18.2652 3.10536 18.5196 3.29289 18.7071C3.48043 18.8946 3.73478 19 4 19H7M17 8L19 10M17 8V18C17 18.2652 16.8946 18.5196 16.7071 18.7071C16.5196 18.8946 16.2652 19 16 19H13M7 19C7.26522 19 7.51957 18.8946 7.70711 18.7071C7.89464 18.5196 8 18.2652 8 18V14C8 13.7348 8.10536 13.4804 8.29289 13.2929C8.48043 13.1054 8.73478 13 9 13H11C11.2652 13 11.5196 13.1054 11.7071 13.2929C11.8946 13.4804 12 13.7348 12 14V18C12 18.2652 12.1054 18.5196 12.2929 18.7071C12.4804 18.8946 12.7348 19 13 19M7 19H13" stroke="#d1d5db" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a href="#rentas_destacadas">
+            <svg class="" width="26" height="26" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-current text-neutral-300" d="M19 19L13 13M15 8C15 8.91925 14.8189 9.82951 14.4672 10.6788C14.1154 11.5281 13.5998 12.2997 12.9497 12.9497C12.2997 13.5998 11.5281 14.1154 10.6788 14.4672C9.82951 14.8189 8.91925 15 8 15C7.08075 15 6.1705 14.8189 5.32122 14.4672C4.47194 14.1154 3.70026 13.5998 3.05025 12.9497C2.40024 12.2997 1.88463 11.5281 1.53284 10.6788C1.18106 9.82951 1 8.91925 1 8C1 6.14348 1.7375 4.36301 3.05025 3.05025C4.36301 1.7375 6.14348 1 8 1C9.85652 1 11.637 1.7375 12.9497 3.05025C14.2625 4.36301 15 6.14348 15 8Z" stroke="#d1d5db" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a href="#recomendados">
+            <svg class="" width="26" height="24" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-current text-neutral-300" d="M1.34249 3.77789C1.56864 3.23192 1.90011 2.73584 2.31798 2.31798C2.73584 1.90011 3.23192 1.56864 3.77789 1.34249C4.32386 1.11634 4.90902 0.999939 5.49998 0.999939C6.09093 0.999939 6.6761 1.11634 7.22207 1.34249C7.76803 1.56864 8.26411 1.90011 8.68198 2.31798L9.99998 3.63598L11.318 2.31798C12.1619 1.47406 13.3065 0.99995 14.5 0.99995C15.6935 0.99995 16.8381 1.47406 17.682 2.31798C18.5259 3.1619 19 4.3065 19 5.49998C19 6.69346 18.5259 7.83806 17.682 8.68198L9.99998 16.364L2.31798 8.68198C1.90011 8.26411 1.56864 7.76803 1.34249 7.22207C1.11634 6.6761 0.999939 6.09093 0.999939 5.49998C0.999939 4.90902 1.11634 4.32386 1.34249 3.77789Z" stroke="#d1d5db" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a>
+            <svg id="toggle-sm"  width="26" height="26" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-current text-neutral-300 cursor-pointer" d="M13.1946 13.8217C14.9231 14.1748 16.7172 14.0122 18.354 13.354C17.684 15.0213 16.5303 16.45 15.0415 17.4562C13.5527 18.4624 11.7969 19.0001 9.99999 19C7.91037 18.9977 5.88662 18.2687 4.27565 16.9378C2.66467 15.6069 1.56683 13.757 1.17031 11.7054C0.773783 9.65374 1.10328 7.52805 2.10232 5.69272C3.10135 3.85739 4.7077 2.42673 6.64599 1.646C5.98779 3.28277 5.82514 5.0769 6.17827 6.80535C6.53139 8.53381 7.38472 10.1204 8.63217 11.3678C9.87962 12.6153 11.4662 13.4686 13.1946 13.8217Z" stroke="#d1d5db" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a href="./login.html"">
+            <svg width="22" height="26" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-current text-neutral-300" d="M10.8284 7.82843C11.5786 7.07828 12 6.06087 12 5C12 3.93913 11.5786 2.92172 10.8284 2.17157C10.0783 1.42143 9.06087 1 8 1C6.93913 1 5.92172 1.42143 5.17157 2.17157C4.42143 2.92172 4 3.93913 4 5C4 6.06087 4.42143 7.07828 5.17157 7.82843C5.92172 8.57857 6.93913 9 8 9C9.06087 9 10.0783 8.57857 10.8284 7.82843Z" stroke="#d1d5db" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="fill-current text-neutral-300" d="M3.05025 14.0503C4.36301 12.7375 6.14348 12 8 12C9.85652 12 11.637 12.7375 12.9497 14.0503C14.2625 15.363 15 17.1435 15 19H1C1 17.1435 1.7375 15.363 3.05025 14.0503Z" stroke="#d1d5db" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </div>
+    <script>
+        const htmlElement = document.querySelector('html');
+        const toggleButton = document.querySelector('#toggle');
+        const toggleButtonSm = document.querySelector('#toggle-sm');
+
+        toggleButton.addEventListener('click', () => tooggleDarkMode ())
+        toggleButtonSm.addEventListener('click', () => tooggleDarkMode ())
+
+        const tooggleDarkMode = () => {
+            htmlElement.classList.contains('dark')?
+            htmlElement.classList.remove('dark') :
+            htmlElement.classList.add('dark')
+        };
+    </script>
+</body>
+</html>
